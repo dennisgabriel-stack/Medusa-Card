@@ -38,9 +38,11 @@ export default function MenuItemRow({ item, index, isLast }: MenuItemRowProps) {
             <span className="text-sm font-display font-bold text-gold/70 uppercase tracking-[0.2em]">
               {item.sectionHeader[locale]}
             </span>
-            <span className="text-[10px] text-gray-500 tracking-wider uppercase">
-              {locale === "de" ? "Optional dazu buchbar" : "Optional add-on"}
-            </span>
+            {item.sectionSubtitle && (
+              <span className="text-[10px] text-gray-500 tracking-wider uppercase">
+                {item.sectionSubtitle[locale]}
+              </span>
+            )}
           </div>
         </div>
       )}

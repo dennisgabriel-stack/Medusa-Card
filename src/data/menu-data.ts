@@ -89,6 +89,7 @@ export const menuCategories: MenuCategory[] = [
         name: "Kopfwechsel Tradi",
         price: 8.9,
         sectionHeader: { de: "Extras", en: "Extras" },
+        sectionSubtitle: { de: "Optional dazu buchbar", en: "Optional add-on" },
       },
       { id: "se-2", name: "Kopfwechsel Premium", price: 8.9 },
       { id: "se-3", name: "Phunnels", price: 2.0 },
