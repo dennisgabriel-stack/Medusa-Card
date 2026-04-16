@@ -162,6 +162,12 @@ export const menuCategories: MenuCategory[] = [
     icon: "🥤",
     items: [
       {
+        id: "sd-0",
+        name: "Wasser",
+        description: { de: "Stilles Wasser / Sprudel", en: "Still Water / Sparkling" },
+        price: 2.8,
+      },
+      {
         id: "sd-1",
         name: "Cola",
         description: { de: "Normal oder Zero", en: "Regular or Zero" },
