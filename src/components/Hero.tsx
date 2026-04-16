@@ -48,21 +48,6 @@ export default function Hero() {
         </div>
       </motion.div>
 
-      {/* Venue name */}
-      <motion.div
-        initial={{ opacity: 0, y: 15 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7, delay: 0.3 }}
-        className="relative z-10 text-center mb-4"
-      >
-        <h2 className="text-2xl sm:text-3xl font-display font-bold text-gold tracking-wider">
-          MEDUSA
-        </h2>
-        <p className="text-xs sm:text-sm font-display text-gold/50 tracking-[0.35em] mt-0.5">
-          HOOKAH LOUNGE
-        </p>
-      </motion.div>
-
       {/* Welcome */}
       <motion.p
         initial={{ opacity: 0, y: 15 }}
