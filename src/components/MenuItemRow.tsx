@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import type { MenuItem } from "@/lib/types";
 import { useLanguage } from "@/context/LanguageContext";
-import AllergenBadge from "./AllergenBadge";
 
 interface MenuItemRowProps {
   item: MenuItem;
@@ -12,7 +11,7 @@ interface MenuItemRowProps {
 }
 
 function formatPrice(price: number): string {
-  return price.toFixed(2).replace(".", ",") + "€";
+  return price.toFixed(2).replace(".", ",") + "\u20AC";
 }
 
 export default function MenuItemRow({ item, index, isLast }: MenuItemRowProps) {
@@ -49,19 +48,6 @@ export default function MenuItemRow({ item, index, isLast }: MenuItemRowProps) {
               <p key={i} className="text-sm text-gray-500">
                 // {variant}
               </p>
-            ))}
-          </div>
-        )}
-
-        {/* Allergens and Additives */}
-        {((item.allergens && item.allergens.length > 0) ||
-          (item.additives && item.additives.length > 0)) && (
-          <div className="mt-2 flex flex-wrap gap-1.5">
-            {item.allergens?.map((id) => (
-              <AllergenBadge key={id} allergenId={id} />
-            ))}
-            {item.additives?.map((id) => (
-              <AllergenBadge key={id} allergenId={id} />
             ))}
           </div>
         )}

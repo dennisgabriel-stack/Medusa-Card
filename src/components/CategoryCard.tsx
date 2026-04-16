@@ -60,11 +60,6 @@ export default function CategoryCard({
         />
       </div>
 
-      {/* Category icon */}
-      <div className="absolute top-3 right-4 text-3xl opacity-60 group-hover:opacity-80 transition-opacity">
-        {category.icon}
-      </div>
-
       {/* Category name */}
       <div className="absolute inset-0 flex items-center justify-start px-6">
         <h2 className="text-3xl sm:text-4xl font-display font-bold text-white tracking-wide drop-shadow-lg uppercase italic">
