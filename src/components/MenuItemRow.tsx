@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { Plus } from "lucide-react";
 import type { MenuItem } from "@/lib/types";
 import { useLanguage } from "@/context/LanguageContext";
 
@@ -23,6 +24,27 @@ export default function MenuItemRow({ item, index, isLast }: MenuItemRowProps) {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.3, delay: index * 0.03 }}
     >
+      {/* Section Header (e.g. "Extras") */}
+      {item.sectionHeader && (
+        <div className="pt-4 pb-5">
+          {/* Top border */}
+          <div className="flex items-center gap-3 mb-4">
+            <div className="flex-1 h-px bg-gradient-to-r from-transparent via-gold/40 to-transparent" />
+            <Plus className="w-3.5 h-3.5 text-gold/50" />
+            <div className="flex-1 h-px bg-gradient-to-r from-transparent via-gold/40 to-transparent" />
+          </div>
+          {/* Header text */}
+          <div className="flex items-center justify-between">
+            <span className="text-sm font-display font-bold text-gold/70 uppercase tracking-[0.2em]">
+              {item.sectionHeader[locale]}
+            </span>
+            <span className="text-[10px] text-gray-500 tracking-wider uppercase">
+              {locale === "de" ? "Optional dazu buchbar" : "Optional add-on"}
+            </span>
+          </div>
+        </div>
+      )}
+
       <div className="py-4">
         {/* Name and Price row */}
         <div className="flex items-start justify-between gap-4">

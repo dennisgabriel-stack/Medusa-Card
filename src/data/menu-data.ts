@@ -84,7 +84,12 @@ export const menuCategories: MenuCategory[] = [
           "Pineapple",
         ],
       },
-      { id: "se-1", name: "Kopfwechsel Tradi", price: 8.9 },
+      {
+        id: "se-1",
+        name: "Kopfwechsel Tradi",
+        price: 8.9,
+        sectionHeader: { de: "Extras", en: "Extras" },
+      },
       { id: "se-2", name: "Kopfwechsel Premium", price: 8.9 },
       { id: "se-3", name: "Phunnels", price: 2.0 },
       { id: "se-4", name: "Ice Bazooka", price: 2.0 },

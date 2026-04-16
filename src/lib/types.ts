@@ -8,6 +8,7 @@ export interface MenuItem {
   variants?: string[];
   allergens?: string[];
   additives?: string[];
+  sectionHeader?: Record<Locale, string>;
 }
 
 export interface MenuCategory {
