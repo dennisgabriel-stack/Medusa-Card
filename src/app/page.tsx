@@ -229,10 +229,10 @@ export default function Home() {
                       Medusa Hookah Lounge
                     </h3>
                     <p className="text-sm text-gray-400">
-                      Marktstra\u00DFe 8
+                      {"Marktstra\u00DFe 8"}
                     </p>
                     <p className="text-sm text-gray-400">
-                      76744 W\u00F6rth am Rhein
+                      {"76744 W\u00F6rth am Rhein"}
                     </p>
                   </div>
                   <div className="flex items-center gap-1.5 px-4 py-2.5 rounded-full bg-gold text-black font-bold text-xs tracking-wider uppercase group-hover:bg-gold-light transition-colors shrink-0">
@@ -262,7 +262,7 @@ export default function Home() {
               </div>
               <div>
                 <p className="text-xs text-gray-500 uppercase tracking-wider mb-0.5">
-                  {locale === "de" ? "Anrufen" : "Call Us"}
+                  {locale === "de" ? "Reservierung vereinbaren" : "Make a Reservation"}
                 </p>
                 <p className="text-base font-semibold text-white">
                   +49 176 20204084
@@ -329,7 +329,7 @@ export default function Home() {
               Medusa Hookah Lounge
             </p>
             <p className="text-xs text-gray-600 mb-1">
-              Marktstra\u00DFe 8 \u00B7 76744 W\u00F6rth am Rhein
+              {"Marktstra\u00DFe 8 \u00B7 76744 W\u00F6rth am Rhein"}
             </p>
             <p className="text-xs text-gray-600 mb-3">
               {locale === "de" ? "Inhaberin" : "Owner"}: Zeynep Efet\u00FCrk
