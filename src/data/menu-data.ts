@@ -505,6 +505,8 @@ export const menuCategories: MenuCategory[] = [
         price: 6.8,
         additives: ["chinin"],
       },
+      { id: "ld-9", name: "Aperol Spritz", price: 7.4 },
+      { id: "ld-10", name: "Lillet Wild Berry", price: 7.4 },
     ],
   },
 
