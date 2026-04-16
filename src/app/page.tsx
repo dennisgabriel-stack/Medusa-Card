@@ -82,7 +82,7 @@ export default function Home() {
             <div className="flex items-center gap-2.5 mb-4">
               <Clock className="w-5 h-5 text-gold" />
               <h3 className="text-base font-display font-bold text-gold tracking-wider uppercase">
-                {locale === "de" ? "\u00D6ffnungszeiten" : "Opening Hours"}
+                {locale === "de" ? "Öffnungszeiten" : "Opening Hours"}
               </h3>
             </div>
             <div className="space-y-2.5">
@@ -229,10 +229,10 @@ export default function Home() {
                       Medusa Hookah Lounge
                     </h3>
                     <p className="text-sm text-gray-400">
-                      {"Marktstra\u00DFe 8"}
+                      Marktstraße 8
                     </p>
                     <p className="text-sm text-gray-400">
-                      {"76744 W\u00F6rth am Rhein"}
+                      76744 Wörth am Rhein
                     </p>
                   </div>
                   <div className="flex items-center gap-1.5 px-4 py-2.5 rounded-full bg-gold text-black font-bold text-xs tracking-wider uppercase group-hover:bg-gold-light transition-colors shrink-0">
@@ -287,12 +287,12 @@ export default function Home() {
               </span>
               <h3 className="text-xl sm:text-2xl font-display font-bold text-gold tracking-wide mb-2">
                 {locale === "de"
-                  ? "Wir suchen Servicekr\u00E4fte!"
+                  ? "Wir suchen Servicekräfte!"
                   : "We are hiring service staff!"}
               </h3>
               <p className="text-sm text-gray-400 mb-5 leading-relaxed max-w-xs">
                 {locale === "de"
-                  ? "Du m\u00F6chtest Teil unseres Teams werden? Bewirb dich jetzt bei uns!"
+                  ? "Du möchtest Teil unseres Teams werden? Bewirb dich jetzt bei uns!"
                   : "Want to join our team? Apply now!"}
               </p>
               <a
@@ -329,10 +329,10 @@ export default function Home() {
               Medusa Hookah Lounge
             </p>
             <p className="text-xs text-gray-600 mb-1">
-              {"Marktstra\u00DFe 8 \u00B7 76744 W\u00F6rth am Rhein"}
+              Marktstraße 8 · 76744 Wörth am Rhein
             </p>
             <p className="text-xs text-gray-600 mb-3">
-              {locale === "de" ? "Inhaberin" : "Owner"}: Zeynep Efet\u00FCrk
+              {locale === "de" ? "Inhaberin" : "Owner"}: Zeynep Efetürk
             </p>
             <p className="text-[10px] text-gray-700">
               {t("allPrices")}

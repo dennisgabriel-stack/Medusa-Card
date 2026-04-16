@@ -133,12 +133,12 @@ export default function LandingPage({ onOpenMenu }: LandingPageProps) {
             </span>
             <h3 className="text-lg sm:text-xl font-display font-bold text-gold tracking-wide mb-2">
               {locale === "de"
-                ? "Wir suchen Servicekr\u00E4fte!"
+                ? "Wir suchen Servicekräfte!"
                 : "We are hiring service staff!"}
             </h3>
             <p className="text-sm text-gray-400 mb-4 leading-relaxed">
               {locale === "de"
-                ? "Du m\u00F6chtest Teil unseres Teams werden? Bewirb dich jetzt bei uns!"
+                ? "Du möchtest Teil unseres Teams werden? Bewirb dich jetzt bei uns!"
                 : "Want to join our team? Apply now!"}
             </p>
             <a
@@ -157,7 +157,7 @@ export default function LandingPage({ onOpenMenu }: LandingPageProps) {
         <motion.div variants={fadeUp} className="text-center mb-8">
           <div className="gold-gradient-line w-24 mx-auto mb-4" />
           <p className="text-xs text-gray-600">
-            {locale === "de" ? "Inhaberin" : "Owner"}: Zeynep Efet\u00FCrk
+            {locale === "de" ? "Inhaberin" : "Owner"}: Zeynep Efetürk
           </p>
         </motion.div>
       </motion.div>
