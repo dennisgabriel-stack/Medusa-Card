@@ -88,19 +88,19 @@ export default function Home() {
             <div className="space-y-2.5">
               <div className="flex items-center justify-between">
                 <span className="text-sm text-gray-300">
-                  {locale === "de" ? "Mo \u2013 Do" : "Mon \u2013 Thu"}
+                  {locale === "de" ? "Mo – Do" : "Mon – Thu"}
                 </span>
                 <span className="text-sm font-semibold text-white">
-                  16:00 \u2013 01:00
+                  16:00 – 01:00
                 </span>
               </div>
               <div className="gold-gradient-line opacity-15" />
               <div className="flex items-center justify-between">
                 <span className="text-sm text-gray-300">
-                  {locale === "de" ? "Fr \u2013 Sa" : "Fri \u2013 Sat"}
+                  {locale === "de" ? "Fr – Sa" : "Fri – Sat"}
                 </span>
                 <span className="text-sm font-semibold text-white">
-                  16:00 \u2013 02:00
+                  16:00 – 02:00
                 </span>
               </div>
               <div className="gold-gradient-line opacity-15" />
@@ -109,7 +109,7 @@ export default function Home() {
                   {locale === "de" ? "Sonntag" : "Sunday"}
                 </span>
                 <span className="text-sm font-semibold text-white">
-                  16:00 \u2013 01:00
+                  16:00 – 01:00
                 </span>
               </div>
             </div>
