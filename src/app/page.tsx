@@ -140,17 +140,16 @@ export default function Home() {
               </span>
             </a>
 
-            {/* WLAN */}
-            <button
-              disabled
-              className="group flex-1 flex items-center justify-center gap-2.5 h-14 rounded-2xl border border-white/10 bg-dark-elevated/50 opacity-60 cursor-not-allowed"
-              title={locale === "de" ? "WLAN-Daten folgen" : "WiFi data coming soon"}
+            {/* WLAN - WiFi URI scheme auto-connects on mobile */}
+            <a
+              href="WIFI:T:WPA;S:Medusa;P:Medusa2026;;"
+              className="group flex-1 flex items-center justify-center gap-2.5 h-14 rounded-2xl border border-white/10 hover:border-gold/30 bg-dark-elevated/50 transition-colors"
             >
-              <Wifi className="w-5 h-5 text-gray-400" />
-              <span className="text-sm font-bold text-gray-400 tracking-wide">
+              <Wifi className="w-5 h-5 text-gold" />
+              <span className="text-sm font-bold text-white group-hover:text-gold tracking-wide transition-colors">
                 WLAN
               </span>
-            </button>
+            </a>
           </motion.div>
         </section>
 
