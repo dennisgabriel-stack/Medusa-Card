@@ -1,7 +1,7 @@
 import type { MenuCategory } from "@/lib/types";
 
 export const menuCategories: MenuCategory[] = [
-  // ─── SHISHA ────────────────────────────────────────────
+  // ─── 1. SHISHA ─────────────────────────────────────────
   {
     id: "shisha",
     name: { de: "Shisha", en: "Shisha" },
@@ -66,16 +66,6 @@ export const menuCategories: MenuCategory[] = [
           "Pineapple",
         ],
       },
-    ],
-  },
-
-  // ─── SHISHA EXTRA ──────────────────────────────────────
-  {
-    id: "shisha-extra",
-    name: { de: "Shisha Extra", en: "Shisha Extras" },
-    gradient: "from-amber-900/80 via-orange-900/60 to-yellow-900/80",
-    icon: "✨",
-    items: [
       { id: "se-1", name: "Kopfwechsel Tradi", price: 8.9 },
       { id: "se-2", name: "Kopfwechsel Premium", price: 8.9 },
       { id: "se-3", name: "Phunnels", price: 2.0 },
@@ -83,10 +73,10 @@ export const menuCategories: MenuCategory[] = [
     ],
   },
 
-  // ─── HEISSE GETRÄNKE ───────────────────────────────────
+  // ─── 2. HOTDRINKS ──────────────────────────────────────
   {
-    id: "heisse-getraenke",
-    name: { de: "Heiße Getränke", en: "Hot Drinks" },
+    id: "hotdrinks",
+    name: { de: "Hotdrinks", en: "Hot Drinks" },
     gradient: "from-amber-950/80 via-yellow-900/50 to-orange-950/80",
     icon: "☕",
     items: [
@@ -141,7 +131,7 @@ export const menuCategories: MenuCategory[] = [
     ],
   },
 
-  // ─── SOFTDRINKS ────────────────────────────────────────
+  // ─── 3. SOFTDRINKS ────────────────────────────────────
   {
     id: "softdrinks",
     name: { de: "Softdrinks", en: "Soft Drinks" },
@@ -178,21 +168,66 @@ export const menuCategories: MenuCategory[] = [
         price: 3.5,
         additives: ["chinin", "saeure"],
       },
+      {
+        id: "mo-1",
+        name: "Moloko Blueberry Acai",
+        price: 4.4,
+        allergens: ["milch"],
+      },
+      {
+        id: "mo-2",
+        name: "Moloko Mint",
+        price: 4.4,
+        allergens: ["milch"],
+      },
+      {
+        id: "mo-3",
+        name: "Moloko Mango",
+        price: 4.4,
+        allergens: ["milch"],
+      },
+      {
+        id: "mo-4",
+        name: "Moloko Sugarfree",
+        price: 4.4,
+        allergens: ["milch"],
+        additives: ["suessungsmittel"],
+      },
     ],
   },
 
-  // ─── ELEFANT BAY ───────────────────────────────────────
+  // ─── 4. ENERGY DRINKS ─────────────────────────────────
   {
-    id: "elefant-bay",
-    name: { de: "Elefant Bay", en: "Elefant Bay" },
+    id: "energy-drinks",
+    name: { de: "Energy Drinks", en: "Energy Drinks" },
+    gradient: "from-lime-950/80 via-green-900/50 to-emerald-950/80",
+    icon: "⚡",
+    items: [
+      {
+        id: "en-1",
+        name: "Red Bull",
+        description: {
+          de: "Classic, White, Purple, Green and more",
+          en: "Classic, White, Purple, Green and more",
+        },
+        price: 4.4,
+        additives: ["koffein", "taurin"],
+      },
+    ],
+  },
+
+  // ─── 5. ICE TEA ────────────────────────────────────────
+  {
+    id: "ice-tea",
+    name: { de: "Ice Tea", en: "Ice Tea" },
     gradient: "from-emerald-950/80 via-teal-900/50 to-green-950/80",
-    icon: "🍹",
+    icon: "🧊",
     items: [
       {
         id: "eb-1",
         name: "Eistee",
         description: {
-          de: "Pfirsich, Zitrone, Blaubeere, Pomme, Wassermelone, Mango, Cher",
+          de: "Pfirsich, Zitrone, Blaubeere, Pomme, Wassermelone, Mango, Cherry",
           en: "Peach, Lemon, Blueberry, Apple, Watermelon, Mango, Cherry",
         },
         price: 4.5,
@@ -211,61 +246,14 @@ export const menuCategories: MenuCategory[] = [
     ],
   },
 
-  // ─── ENERGY ────────────────────────────────────────────
+  // ─── 6. COCKTAILS ─────────────────────────────────────
   {
-    id: "energy",
-    name: { de: "Energy", en: "Energy Drinks" },
-    gradient: "from-lime-950/80 via-green-900/50 to-emerald-950/80",
-    icon: "⚡",
-    items: [
-      {
-        id: "en-1",
-        name: "Red Bull",
-        description: {
-          de: "Classic, White, Purple, Green and more",
-          en: "Classic, White, Purple, Green and more",
-        },
-        price: 4.4,
-        additives: ["koffein", "taurin"],
-      },
-    ],
-  },
-
-  // ─── MOLOKO ────────────────────────────────────────────
-  {
-    id: "moloko",
-    name: { de: "Moloko", en: "Moloko" },
-    gradient: "from-violet-950/80 via-purple-900/50 to-indigo-950/80",
-    icon: "🥛",
-    items: [
-      {
-        id: "mo-1",
-        name: "Blueberry Acai",
-        price: 4.4,
-        allergens: ["milch"],
-      },
-      { id: "mo-2", name: "Mint", price: 4.4, allergens: ["milch"] },
-      { id: "mo-3", name: "Mango", price: 4.4, allergens: ["milch"] },
-      {
-        id: "mo-4",
-        name: "Sugarfree",
-        price: 4.4,
-        allergens: ["milch"],
-        additives: ["suessungsmittel"],
-      },
-    ],
-  },
-
-  // ─── COCKTAILS (OHNE ALKOHOL) ──────────────────────────
-  {
-    id: "cocktails-alkoholfrei",
-    name: {
-      de: "Cocktails (Ohne Alkohol)",
-      en: "Cocktails (Non-Alcoholic)",
-    },
+    id: "cocktails",
+    name: { de: "Cocktails", en: "Cocktails" },
     gradient: "from-pink-950/80 via-rose-900/50 to-fuchsia-950/80",
     icon: "🍸",
     items: [
+      // Ohne Alkohol
       {
         id: "ca-1",
         name: "Ipanema",
@@ -348,16 +336,7 @@ export const menuCategories: MenuCategory[] = [
         price: 7.4,
         additives: ["koffein", "taurin"],
       },
-    ],
-  },
-
-  // ─── COCKTAILS (MIT ALKOHOL) ───────────────────────────
-  {
-    id: "cocktails-alkohol",
-    name: { de: "Cocktails (Mit Alkohol)", en: "Cocktails (Alcoholic)" },
-    gradient: "from-fuchsia-950/80 via-purple-900/50 to-pink-950/80",
-    icon: "🍹",
-    items: [
+      // Mit Alkohol
       {
         id: "cm-1",
         name: "Pina Colada",
@@ -457,10 +436,10 @@ export const menuCategories: MenuCategory[] = [
     ],
   },
 
-  // ─── LONG DRINKS ───────────────────────────────────────
+  // ─── 7. LONGDRINKS ─────────────────────────────────────
   {
-    id: "long-drinks",
-    name: { de: "Long Drinks", en: "Long Drinks" },
+    id: "longdrinks",
+    name: { de: "Longdrinks", en: "Long Drinks" },
     gradient: "from-amber-950/80 via-orange-900/50 to-yellow-950/80",
     icon: "🥃",
     items: [
@@ -500,10 +479,10 @@ export const menuCategories: MenuCategory[] = [
     ],
   },
 
-  // ─── BIER, WEIN & SEKT ────────────────────────────────
+  // ─── 8. BIER & WEIN ───────────────────────────────────
   {
-    id: "bier-wein-sekt",
-    name: { de: "Bier, Wein & Sekt", en: "Beer, Wine & Sparkling" },
+    id: "bier-wein",
+    name: { de: "Bier & Wein", en: "Beer & Wine" },
     gradient: "from-yellow-950/80 via-amber-900/50 to-orange-950/80",
     icon: "🍺",
     items: [
@@ -564,7 +543,7 @@ export const menuCategories: MenuCategory[] = [
     ],
   },
 
-  // ─── SHOTS ─────────────────────────────────────────────
+  // ─── 9. SHOTS ──────────────────────────────────────────
   {
     id: "shots",
     name: { de: "Shots", en: "Shots" },
@@ -605,7 +584,7 @@ export const menuCategories: MenuCategory[] = [
     ],
   },
 
-  // ─── FLASCHEN ──────────────────────────────────────────
+  // ─── 10. FLASCHEN ──────────────────────────────────────
   {
     id: "flaschen",
     name: { de: "Flaschen", en: "Bottles" },
@@ -628,7 +607,7 @@ export const menuCategories: MenuCategory[] = [
     ],
   },
 
-  // ─── SNACKS ────────────────────────────────────────────
+  // ─── 11. SNACKS ────────────────────────────────────────
   {
     id: "snacks",
     name: { de: "Snacks", en: "Snacks" },
