@@ -11,7 +11,7 @@ export const menuCategories: MenuCategory[] = [
     items: [
       {
         id: "sh-1",
-        name: "Nargilem TRADI",
+        name: "TRADI",
         price: 15.9,
         variants: [
           "Doppelapfel",
@@ -26,7 +26,7 @@ export const menuCategories: MenuCategory[] = [
       },
       {
         id: "sh-2",
-        name: "Wookah / NPSTabak MIX",
+        name: "Wookah",
         price: 16.9,
         variants: [
           "Love 66",
