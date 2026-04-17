@@ -15,9 +15,12 @@ export default function Hero() {
       {/* Background radial glow */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(200,169,94,0.07)_0%,_transparent_70%)]" />
 
-      {/* Decorative circle */}
+      {/* Decorative circles */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-        <div className="w-72 h-72 sm:w-80 sm:h-80 rounded-full border border-gold/[0.07]" />
+        <div className="w-[22rem] h-[22rem] sm:w-[26rem] sm:h-[26rem] md:w-[30rem] md:h-[30rem] rounded-full border border-gold/[0.07]" />
+      </div>
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+        <div className="w-[18rem] h-[18rem] sm:w-[22rem] sm:h-[22rem] md:w-[26rem] md:h-[26rem] rounded-full border border-gold/[0.04]" />
       </div>
 
       {/* Logo */}
@@ -32,15 +35,15 @@ export default function Hero() {
             <Image
               src="/images/medusa-logo.svg"
               alt="Medusa Hookah Lounge"
-              width={240}
-              height={240}
+              width={400}
+              height={400}
               priority
               onError={() => setLogoError(true)}
-              className="w-40 h-40 sm:w-52 sm:h-52 object-contain"
+              className="w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 object-contain"
             />
           ) : (
-            <div className="w-40 h-40 sm:w-52 sm:h-52 rounded-full border-2 border-gold/30 flex items-center justify-center bg-gold/5">
-              <span className="text-5xl sm:text-6xl font-display font-bold text-gold">
+            <div className="w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-full border-2 border-gold/30 flex items-center justify-center bg-gold/5">
+              <span className="text-7xl sm:text-8xl font-display font-bold text-gold">
                 M
               </span>
             </div>
