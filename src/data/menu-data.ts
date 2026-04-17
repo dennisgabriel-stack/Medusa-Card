@@ -241,6 +241,10 @@ export const menuCategories: MenuCategory[] = [
         id: "en-1",
         name: "Red Bull",
         price: 4.4,
+        note: {
+          de: "Special Editions und Farbauswahl rotiert gelegentlich. Einfach das Personal fragen!",
+          en: "Special editions and color selection rotates occasionally. Just ask the staff!",
+        },
         variants: [
           "Classic",
           "White Edition",

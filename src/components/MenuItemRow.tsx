@@ -75,6 +75,13 @@ export default function MenuItemRow({ item, index, isLast }: MenuItemRowProps) {
             ))}
           </div>
         )}
+
+        {/* Note (below variants) */}
+        {item.note && item.note[locale] && (
+          <p className="mt-3 text-xs text-gray-500 italic">
+            {item.note[locale]}
+          </p>
+        )}
       </div>
 
       {/* Separator */}

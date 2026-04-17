@@ -10,6 +10,7 @@ export interface MenuItem {
   additives?: string[];
   sectionHeader?: Record<Locale, string>;
   sectionSubtitle?: Record<Locale, string>;
+  note?: Record<Locale, string>;
 }
 
 export interface MenuCategory {
