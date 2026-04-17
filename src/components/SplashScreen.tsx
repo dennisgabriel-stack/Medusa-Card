@@ -39,13 +39,13 @@ export default function SplashScreen({ onFinished }: SplashScreenProps) {
             initial={{ scale: 0, opacity: 0 }}
             animate={{ scale: 1, opacity: 0.15 }}
             transition={{ duration: 1.2, ease: "easeOut" }}
-            className="absolute w-72 h-72 sm:w-96 sm:h-96 rounded-full border border-gold"
+            className="absolute w-[22rem] h-[22rem] sm:w-[26rem] sm:h-[26rem] md:w-[30rem] md:h-[30rem] rounded-full border border-gold"
           />
           <motion.div
             initial={{ scale: 0, opacity: 0 }}
             animate={{ scale: 1, opacity: 0.08 }}
             transition={{ duration: 1.4, ease: "easeOut", delay: 0.2 }}
-            className="absolute w-96 h-96 sm:w-[30rem] sm:h-[30rem] rounded-full border border-gold"
+            className="absolute w-[26rem] h-[26rem] sm:w-[30rem] sm:h-[30rem] md:w-[34rem] md:h-[34rem] rounded-full border border-gold"
           />
 
           {/* Logo */}
@@ -57,10 +57,10 @@ export default function SplashScreen({ onFinished }: SplashScreenProps) {
             <Image
               src="/images/medusa-logo.svg"
               alt="Medusa"
-              width={200}
-              height={200}
+              width={400}
+              height={400}
               priority
-              className="w-36 h-36 sm:w-44 sm:h-44 object-contain"
+              className="w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 object-contain"
             />
           </motion.div>
 
