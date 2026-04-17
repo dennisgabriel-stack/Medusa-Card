@@ -17,5 +17,6 @@ export interface MenuCategory {
   name: Record<Locale, string>;
   gradient: string;
   icon: string;
+  image?: string;
   items: MenuItem[];
 }

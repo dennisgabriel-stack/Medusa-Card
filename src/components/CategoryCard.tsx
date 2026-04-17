@@ -33,13 +33,27 @@ export default function CategoryCard({
       onClick={onClick}
       className="group relative w-full h-44 sm:h-48 rounded-2xl overflow-hidden cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-gold/50"
     >
-      {/* Gradient background */}
-      <div
-        className={`absolute inset-0 bg-gradient-to-br ${category.gradient} transition-all duration-500`}
-      />
+      {/* Background image or gradient fallback */}
+      {category.image ? (
+        <Image
+          src={category.image}
+          alt=""
+          fill
+          sizes="(max-width: 640px) 100vw, 672px"
+          className="object-cover transition-transform duration-700 group-hover:scale-105"
+          priority={index < 3}
+        />
+      ) : (
+        <div
+          className={`absolute inset-0 bg-gradient-to-br ${category.gradient}`}
+        />
+      )}
+
+      {/* Dark overlay for text readability */}
+      <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-black/30" />
 
       {/* Greek pattern overlay */}
-      <div className="absolute inset-0 greek-pattern-overlay opacity-30" />
+      <div className="absolute inset-0 greek-pattern-overlay opacity-20" />
 
       {/* Shimmer effect on hover */}
       <div className="absolute inset-0 overflow-hidden">
@@ -50,25 +64,25 @@ export default function CategoryCard({
       <div className="absolute inset-0 rounded-2xl border border-white/10 group-hover:border-gold/40 transition-colors duration-300" />
 
       {/* Small logo watermark */}
-      <div className="absolute top-3 left-3 opacity-40 group-hover:opacity-60 transition-opacity">
+      <div className="absolute top-3 left-3 opacity-50 group-hover:opacity-70 transition-opacity">
         <Image
           src="/images/medusa-logo.svg"
           alt=""
           width={40}
           height={40}
-          className="w-8 h-8 object-contain"
+          className="w-8 h-8 object-contain drop-shadow-lg"
         />
       </div>
 
       {/* Category name */}
       <div className="absolute inset-0 flex items-center justify-start px-6">
-        <h2 className="text-3xl sm:text-4xl font-display font-bold text-white tracking-wide drop-shadow-lg uppercase italic">
+        <h2 className="text-3xl sm:text-4xl font-display font-bold text-white tracking-wide drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] uppercase italic">
           {category.name[locale]}
         </h2>
       </div>
 
       {/* Item count badge */}
-      <div className="absolute bottom-3 right-4 bg-black/40 backdrop-blur-sm px-3 py-1 rounded-full">
+      <div className="absolute bottom-3 right-4 bg-black/60 backdrop-blur-sm px-3 py-1 rounded-full border border-gold/20">
         <span className="text-xs text-gold font-medium">
           {category.items.length}{" "}
           {category.items.length === 1 ? "Item" : "Items"}

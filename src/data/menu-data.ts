@@ -7,6 +7,7 @@ export const menuCategories: MenuCategory[] = [
     name: { de: "Shisha", en: "Shisha" },
     gradient: "from-orange-900/80 via-red-900/60 to-amber-900/80",
     icon: "💨",
+    image: "/images/shisha-bg.jpg",
     items: [
       {
         id: "sh-1",
@@ -103,6 +104,7 @@ export const menuCategories: MenuCategory[] = [
     name: { de: "Hotdrinks", en: "Hot Drinks" },
     gradient: "from-amber-950/80 via-yellow-900/50 to-orange-950/80",
     icon: "☕",
+    image: "/images/hotdrinks-bg.jpg",
     items: [
       {
         id: "hg-1",
@@ -161,6 +163,7 @@ export const menuCategories: MenuCategory[] = [
     name: { de: "Softdrinks", en: "Soft Drinks" },
     gradient: "from-blue-950/80 via-cyan-900/50 to-blue-900/80",
     icon: "🥤",
+    image: "/images/softdrinks-bg.png",
     items: [
       {
         id: "sd-0",
@@ -232,6 +235,7 @@ export const menuCategories: MenuCategory[] = [
     name: { de: "Energy Drinks", en: "Energy Drinks" },
     gradient: "from-lime-950/80 via-green-900/50 to-emerald-950/80",
     icon: "⚡",
+    image: "/images/energy-bg.jpg",
     items: [
       {
         id: "en-1",
@@ -252,6 +256,7 @@ export const menuCategories: MenuCategory[] = [
     name: { de: "Ice Tea", en: "Ice Tea" },
     gradient: "from-emerald-950/80 via-teal-900/50 to-green-950/80",
     icon: "🧊",
+    image: "/images/icetea-bg.jpg",
     items: [
       { id: "eb-1", name: "Pfirsich", price: 4.5 },
       { id: "eb-2", name: "Zitrone", price: 4.5 },
@@ -278,6 +283,7 @@ export const menuCategories: MenuCategory[] = [
     name: { de: "Cocktails", en: "Cocktails" },
     gradient: "from-pink-950/80 via-rose-900/50 to-fuchsia-950/80",
     icon: "🍸",
+    image: "/images/cocktails-bg.jpg",
     items: [
       // Ohne Alkohol
       {
@@ -468,6 +474,7 @@ export const menuCategories: MenuCategory[] = [
     name: { de: "Longdrinks", en: "Long Drinks" },
     gradient: "from-amber-950/80 via-orange-900/50 to-yellow-950/80",
     icon: "🥃",
+    image: "/images/longdrinks-bg.jpg",
     items: [
       {
         id: "ld-1",
@@ -513,6 +520,7 @@ export const menuCategories: MenuCategory[] = [
     name: { de: "Bier & Wein", en: "Beer & Wine" },
     gradient: "from-yellow-950/80 via-amber-900/50 to-orange-950/80",
     icon: "🍺",
+    image: "/images/beer-wine-bg.jpg",
     items: [
       {
         id: "bw-1",
@@ -577,6 +585,7 @@ export const menuCategories: MenuCategory[] = [
     name: { de: "Shots", en: "Shots" },
     gradient: "from-red-950/80 via-orange-900/50 to-red-900/80",
     icon: "🔥",
+    image: "/images/shots-bg.jpg",
     items: [
       { id: "st-1", name: "Vodka", price: 2.8 },
       { id: "st-2", name: "Tequilla", price: 2.8 },
@@ -618,6 +627,7 @@ export const menuCategories: MenuCategory[] = [
     name: { de: "Flaschen", en: "Bottles" },
     gradient: "from-slate-800/80 via-zinc-700/50 to-gray-800/80",
     icon: "🍾",
+    image: "/images/bottles-bg.jpg",
     items: [
       { id: "fl-1", name: "Jacky 0.7", price: 89.0 },
       { id: "fl-2", name: "Three Sixty", price: 79.0 },
