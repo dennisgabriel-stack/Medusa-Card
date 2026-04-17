@@ -664,14 +664,6 @@ export const menuCategories: MenuCategory[] = [
     icon: "🍿",
     items: [
       {
-        id: "sn-1",
-        name: "Nachos",
-        description: { de: "Salsa / Cheese Dip", en: "Salsa / Cheese Dip" },
-        price: 5.9,
-        additives: ["geschmack"],
-        allergens: ["milch"],
-      },
-      {
         id: "sn-2",
         name: "Baguettes",
         description: {
@@ -679,16 +671,6 @@ export const menuCategories: MenuCategory[] = [
           en: "Turkey / Cheese / Suscuk",
         },
         price: 7.8,
-        allergens: ["milch", "gluten"],
-      },
-      {
-        id: "sn-3",
-        name: "Sandwiches",
-        description: {
-          de: "Suscuk, Käse, Pute",
-          en: "Suscuk, Cheese, Turkey",
-        },
-        price: 6.9,
         allergens: ["milch", "gluten"],
       },
     ],
