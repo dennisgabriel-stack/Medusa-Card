@@ -50,9 +50,16 @@ export default function MenuItemRow({ item, index, isLast }: MenuItemRowProps) {
       <div className="py-4">
         {/* Name and Price row */}
         <div className="flex items-start justify-between gap-4">
-          <h3 className="text-base sm:text-lg font-semibold text-white flex-1">
-            {item.name}
-          </h3>
+          <div className="flex items-center gap-2.5 flex-1">
+            <h3 className="text-base sm:text-lg font-semibold text-white">
+              {item.name}
+            </h3>
+            {item.badge && item.badge[locale] && (
+              <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[9px] font-bold uppercase tracking-wider border border-emerald-500/30 bg-emerald-500/10 text-emerald-400">
+                {item.badge[locale]}
+              </span>
+            )}
+          </div>
           <span className="text-lg font-bold text-gold whitespace-nowrap font-display">
             {formatPrice(item.price)}
           </span>

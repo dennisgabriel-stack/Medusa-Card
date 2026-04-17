@@ -11,6 +11,7 @@ export interface MenuItem {
   sectionHeader?: Record<Locale, string>;
   sectionSubtitle?: Record<Locale, string>;
   note?: Record<Locale, string>;
+  badge?: Record<Locale, string>;
 }
 
 export interface MenuCategory {

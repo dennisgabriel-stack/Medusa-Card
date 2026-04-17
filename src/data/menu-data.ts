@@ -269,7 +269,7 @@ export const menuCategories: MenuCategory[] = [
       { id: "eb-1", name: "Pfirsich", price: 4.5 },
       { id: "eb-2", name: "Zitrone", price: 4.5 },
       { id: "eb-3", name: "Blaubeere", price: 4.5 },
-      { id: "eb-4", name: "Pomme", price: 4.5 },
+      { id: "eb-4", name: "Granatapfel", price: 4.5 },
       { id: "eb-5", name: "Wassermelone", price: 4.5 },
       { id: "eb-6", name: "Mango", price: 4.5 },
       { id: "eb-7", name: "Cherry", price: 4.5 },
@@ -302,6 +302,7 @@ export const menuCategories: MenuCategory[] = [
           en: "Limes, Cane Sugar, Ginger Ale, Lime Juice",
         },
         price: 7.4,
+        badge: { de: "Alkoholfrei", en: "Non-Alcoholic" },
       },
       {
         id: "ca-2",
@@ -311,8 +312,7 @@ export const menuCategories: MenuCategory[] = [
           en: "Pineapple Juice, Orange Juice, Coconut Syrup, Cream, Cherry Juice",
         },
         price: 7.4,
-        additives: ["farbstoffe"],
-        allergens: ["milch"],
+        badge: { de: "Alkoholfrei", en: "Non-Alcoholic" },
       },
       {
         id: "ca-3",
@@ -322,7 +322,7 @@ export const menuCategories: MenuCategory[] = [
           en: "Pineapple Juice, Orange Juice, Passion Fruit Nectar, Lime Juice, Grenadine",
         },
         price: 7.4,
-        additives: ["farbstoffe"],
+        badge: { de: "Alkoholfrei", en: "Non-Alcoholic" },
       },
       {
         id: "ca-4",
@@ -332,7 +332,7 @@ export const menuCategories: MenuCategory[] = [
           en: "Pineapple Juice, Cream, Coconut Syrup, Mango Syrup",
         },
         price: 7.4,
-        allergens: ["milch"],
+        badge: { de: "Alkoholfrei", en: "Non-Alcoholic" },
       },
       {
         id: "ca-5",
@@ -342,8 +342,7 @@ export const menuCategories: MenuCategory[] = [
           en: "Pineapple Juice, Cream, Coconut Syrup, Strawberry Syrup",
         },
         price: 7.4,
-        additives: ["farbstoffe"],
-        allergens: ["milch"],
+        badge: { de: "Alkoholfrei", en: "Non-Alcoholic" },
       },
       {
         id: "ca-6",
@@ -353,8 +352,7 @@ export const menuCategories: MenuCategory[] = [
           en: "Pineapple Juice, Cream, Coconut Syrup, Blue Curacao",
         },
         price: 7.4,
-        additives: ["farbstoffe"],
-        allergens: ["milch"],
+        badge: { de: "Alkoholfrei", en: "Non-Alcoholic" },
       },
       {
         id: "ca-7",
@@ -364,7 +362,7 @@ export const menuCategories: MenuCategory[] = [
           en: "Pineapple Juice, Cream, Coconut Syrup",
         },
         price: 7.4,
-        allergens: ["milch"],
+        badge: { de: "Alkoholfrei", en: "Non-Alcoholic" },
       },
       {
         id: "ca-8",
@@ -374,7 +372,7 @@ export const menuCategories: MenuCategory[] = [
           en: "Red Bull, Cane Sugar, Cherry Juice, Limes",
         },
         price: 7.4,
-        additives: ["koffein", "taurin"],
+        badge: { de: "Alkoholfrei", en: "Non-Alcoholic" },
       },
       // Mit Alkohol
       {
@@ -532,7 +530,7 @@ export const menuCategories: MenuCategory[] = [
     items: [
       {
         id: "bw-1",
-        name: "Velentins",
+        name: "Veltins",
         description: { de: "Flaschen Bier 0.5l", en: "Bottled Beer 0.5l" },
         price: 4.2,
         allergens: ["gluten"],
