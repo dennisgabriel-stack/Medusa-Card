@@ -30,7 +30,7 @@ export default function Hero() {
         <div className="animate-glow-pulse">
           {!logoError ? (
             <Image
-              src="/images/medusa-logo.png"
+              src="/images/medusa-logo.svg"
               alt="Medusa Hookah Lounge"
               width={240}
               height={240}

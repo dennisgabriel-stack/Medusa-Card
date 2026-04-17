@@ -52,7 +52,7 @@ export default function CategoryCard({
       {/* Small logo watermark */}
       <div className="absolute top-3 left-3 opacity-40 group-hover:opacity-60 transition-opacity">
         <Image
-          src="/images/medusa-logo-small.png"
+          src="/images/medusa-logo.svg"
           alt=""
           width={40}
           height={40}
