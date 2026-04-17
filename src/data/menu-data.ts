@@ -240,12 +240,16 @@ export const menuCategories: MenuCategory[] = [
       {
         id: "en-1",
         name: "Red Bull",
-        description: {
-          de: "Classic, White, Purple, Green and more",
-          en: "Classic, White, Purple, Green and more",
-        },
         price: 4.4,
-        additives: ["koffein", "taurin"],
+        variants: [
+          "Classic",
+          "White Edition",
+          "Purple Edition",
+          "Green Edition",
+          "Red Edition",
+          "Yellow Edition",
+          "Sugarfree",
+        ],
       },
     ],
   },
