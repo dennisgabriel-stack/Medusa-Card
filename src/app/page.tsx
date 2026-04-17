@@ -181,7 +181,7 @@ export default function Home() {
 
             {/* Google Review */}
             <a
-              href="https://www.google.com/maps/place/Marktstra%C3%9Fe+8,+76744+W%C3%B6rth+am+Rhein"
+              href="https://maps.app.goo.gl/93mbVuKcJGdrNhJR9?g_st=ic"
               target="_blank"
               rel="noopener noreferrer"
               className="group flex-1 flex items-center justify-center gap-2.5 h-14 rounded-2xl bg-green-600 hover:bg-green-500 transition-colors"
