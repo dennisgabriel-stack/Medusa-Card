@@ -5,6 +5,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { MapPin, Navigation, Mail, Clock, Phone, Wifi } from "lucide-react";
 import SplashScreen from "@/components/SplashScreen";
+import AnimatedBackground from "@/components/AnimatedBackground";
 import Hero from "@/components/Hero";
 import CategoryCard from "@/components/CategoryCard";
 import CategoryModal from "@/components/CategoryModal";
@@ -37,9 +38,10 @@ export default function Home() {
     <>
       {showSplash && <SplashScreen onFinished={handleSplashFinished} />}
 
+      <AnimatedBackground />
       <LanguageToggle />
 
-      <main className="relative min-h-screen">
+      <main className="relative min-h-screen z-10">
         {/* ════════════════ HERO ════════════════ */}
         <Hero />
 
