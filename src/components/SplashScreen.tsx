@@ -55,7 +55,7 @@ export default function SplashScreen({ onFinished }: SplashScreenProps) {
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           >
             <Image
-              src="/images/medusa-logo.svg"
+              src="/images/medusa-logo.png"
               alt="Medusa"
               width={400}
               height={400}

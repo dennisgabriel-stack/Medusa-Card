@@ -163,7 +163,7 @@ export const menuCategories: MenuCategory[] = [
     name: { de: "Softdrinks", en: "Soft Drinks" },
     gradient: "from-blue-950/80 via-cyan-900/50 to-blue-900/80",
     icon: "🥤",
-    image: "/images/softdrinks-bg.png",
+    image: "/images/softdrinks-bg.jpg",
     items: [
       {
         id: "sd-0",

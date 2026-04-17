@@ -61,7 +61,7 @@ export default function Home() {
         <div className="flex items-center justify-center gap-4 px-8 pb-12 max-w-md mx-auto">
           <div className="flex-1 gold-gradient-line" />
           <Image
-            src="/images/medusa-logo.svg"
+            src="/images/medusa-logo.png"
             alt=""
             width={32}
             height={32}
@@ -319,7 +319,7 @@ export default function Home() {
           >
             <div className="gold-gradient-line w-24 mb-6" />
             <Image
-              src="/images/medusa-logo.svg"
+              src="/images/medusa-logo.png"
               alt="Medusa"
               width={48}
               height={48}
