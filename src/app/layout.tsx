@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Cinzel, Inter } from "next/font/google";
 import { LanguageProvider } from "@/context/LanguageContext";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const cinzel = Cinzel({
@@ -43,6 +44,7 @@ export default function RootLayout({
     <html lang="de" className={`${cinzel.variable} ${inter.variable}`}>
       <body className="min-h-screen bg-dark text-white font-body antialiased">
         <LanguageProvider>{children}</LanguageProvider>
+        <Analytics />
       </body>
     </html>
   );
